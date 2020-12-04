@@ -22,7 +22,7 @@ def get_filters():
         if city in CITY_DATA:
           break
         else:
-            print("Try again.\n")
+            print("error\n")
             continue
         
 
@@ -34,7 +34,7 @@ def get_filters():
         if month in ('January', 'February', 'March', 'April', 'May', 'June', 'all'):
           break
         else:
-            print("Try again.\n")
+            print("error\n")
             continue
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
@@ -43,7 +43,7 @@ def get_filters():
         if day in ('all', 'monday', 'tuesday',' wednesday', 'thursday', 'friday', 'saturday', 'sunday'):
           break
         else:
-           print("Try again.\n")
+           print("error\n")
            continue
 
 
@@ -99,7 +99,7 @@ def time_stats(df):
     start_time = time.time()
 
     # TO DO: display the most common month
-    print('commonth month:', df['month'].mode()[0])
+    print('common month:', df['month'].mode()[0])
 
     # TO DO: display the most common day of week
     print('common day of the week:', df['day'].mode()[0])
